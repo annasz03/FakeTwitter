@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#1DA1F2"
+        android:onClick="register"
+        android:text="@string/regisztr_ci"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#1DA1F2"
+        android:onClick="login"
+        android:text="@string/bej"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPasswordRe"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Jelszó újra"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Jelszó"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editPasswordRe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="E-mail cím"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Felhasználónév"
+        android:inputType="text"
+
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
